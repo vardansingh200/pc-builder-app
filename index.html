@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PC Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PC / Laptop / Phone Builder</h1>
+
+        <label for="device">Device Type</label>
+        <select id="device">
+            <option value="PC">PC</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Phone">Phone</option>
+        </select>
+
+        <label for="usage">Usage Type</label>
+        <select id="usage">
+            <option value="Gaming">Gaming</option>
+            <option value="Editing">Editing</option>
+            <option value="Office">Office</option>
+            <option value="Normal">Normal</option>
+        </select>
+
+        <label for="brand">Brand (Optional)</label>
+        <input type="text" id="brand" placeholder="Brand (e.g., Dell, Samsung)">
+
+        <label for="budget">Budget (₹)</label>
+        <input type="number" id="budget" placeholder="Enter Budget">
+
+        <button onclick="search()">Search</button>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
